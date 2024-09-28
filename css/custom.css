@@ -6,21 +6,54 @@
   margin-top: 0;
 }
 
-#me {
+/* #me {
   width: 180px;
   border-radius: 50%;
+} */
+ 
+#me {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+  display: block;
+  margin: 0 auto; /* Center the image */
 }
 
-.flex-item-stretch-6 {
+/* .flex-item-stretch-6 {
   flex: 1 auto;
+} */
+
+.flex-item-stretch-6 {
+  flex: 1 1 auto; /* Sets flex-grow and flex-shrink to 1 and flex-basis to auto */
 }
 
 .max-width-600 {
-  max-width: 900px;
+  max-width: 600px;
+}
+
+/* @media screen and (min-width: 900px) {
+  .flex-item-stretch-6 {
+    flex: 5.5;
+  }
+} */
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap if they don't fit */
+  align-items: flex-start; /* Align items at the top of the row */
+  justify-content: space-between; /* Spread out the items evenly */
+}
+
+.flex-item {
+  flex: 1 1 100%; /* Set flex-grow and flex-shrink to 1 and flex-basis to 100% */
+  box-sizing: border-box;
+  padding: 10px; /* Optional: Add some padding to ensure spacing between items */
+  margin-bottom: 20px; /* Space between flex items */
 }
 
 @media screen and (min-width: 900px) {
   .flex-item-stretch-6 {
-    flex: 5.5;
+    flex: 5.5 1 0%; /* Set flex-grow to 5.5, flex-shrink to 1, and flex-basis to 0 */
   }
 }
