@@ -65,14 +65,14 @@
   font-size: 1.1em;
 }
 .general-discipline {
-  background-color: #cfc98d; /* Light red */
-  border-left: 5px solid #857868;
+  background-color: #ffcccc; /* Light red */
+  border-left: 5px solid red;
 }
 .bio-field {
-  background-color: #abd6a8; /* Light yellow */
-  border-left: 5px solid #63ba97;
+  background-color: #fff2cc; /* Light yellow */
+  border-left: 5px solid goldenrod;
 }
 .detailed-interests {
-  background-color: #aedcda; /* Light blue */
-  border-left: 5px solid #54b9c1;
+  background-color: #cce5ff; /* Light blue */
+  border-left: 5px solid blue;
 }
